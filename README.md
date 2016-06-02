@@ -6,7 +6,5 @@
 ### Syntax ###
       EasyFileWatcher.onCreate(<fileName>)(<Function which takes a string argument and returns Unit > )
 
- ### As an example ###
+### As an example ###
      EasyFileWatcher.onCreate("/home/satya/Documents/fw/")(fileName => println(fileName))
-
-     
