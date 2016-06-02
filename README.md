@@ -7,4 +7,4 @@
       EasyFileWatcher.onCreate(<fileName>)(<Function which takes a string argument and returns Unit > )
 
 ### As an example ###
-     EasyFileWatcher.onCreate("/home/satya/Documents/fw/")(fileName => println(fileName))
+     EasyFileWatcher.onCreate("/home/satya/Documents/fw/")(fileName => saveToGoogleDrive(fileName))
