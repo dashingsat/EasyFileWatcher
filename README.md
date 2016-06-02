@@ -9,3 +9,4 @@
 ### As an example ###
      EasyFileWatcher.onCreate("/home/satya/Documents/fw/")(fileName => saveToGoogleDrive(fileName))
      EasyFileWatcher.onDelete("/home/satya/Documents/fw/")(fileName => notify(fileName))
+     EasyFileWatcher.onModify("/home/satya/Documents/fw/")(fileName => notify(fileName))
