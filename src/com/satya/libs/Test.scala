@@ -7,13 +7,16 @@ object Test {
 
   def main(args: Array[String]) {
 
-    EasyFileWatcher.onDelete("C:\\Users\\sdas\\Documents\\fw")(fileName => {
 
-      println(fileName)
+    EasyFileWatcher.onCreate("/home/satya/Documents/fw/")(fileName => println(fileName))
 
+    EasyFileWatcher.onDelete("/home/satya/Documents/fw/")(fileName => {
+
+      println("FILE TO be deleted :"+ fileName)
     })
+
+    while(true){
+
+    }
   }
-
-
-  EasyFileWatcher.onCreate("C:\\Users\\sdas\\Documents\\fw")(fileName => println(fileName))
 }
